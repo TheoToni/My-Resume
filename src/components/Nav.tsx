@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { useState } from "react";
+
 function Nav() {
   return (
     <main>
@@ -6,6 +9,8 @@ function Nav() {
           <h1 className="text-white text-sm font-bold">Resume</h1>
           <h2 className="text-white text-lg font-bold">Antoni Theodorou</h2>
         </div>
+
+        <div></div>
       </nav>
     </main>
   );
