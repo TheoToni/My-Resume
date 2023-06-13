@@ -13,7 +13,7 @@ function Nav() {
           <h2 className="text-white text-lg font-bold">Antoni Theodorou</h2>
         </div>
 
-        {/* HIDE THE NAV LINKS ON MOBILE WITH HOOK  */}
+        {/* HIDE THE NAV LINKS ON MOBILE WITH HOOK DESKTOP VIEW HERE  */}
         {matches && (
           <div className="flex gap-12">
             <a className="text-black" href="/">
@@ -38,7 +38,7 @@ function Nav() {
             <span className="block h-1 w-8 bg-white"></span>
           </div>
         )}
-
+        {/* MOBILE VIEW HERE*/}
         {toggled && (
           <div className="fixed  bg-white bottom-0 left-0 w-full h-screen flex gap-12 justify-center items-center">
             <div className="flex flex-col gap-8">
