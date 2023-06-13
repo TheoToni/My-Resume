@@ -38,6 +38,25 @@ function Nav() {
             <span className="block h-1 w-8 bg-white"></span>
           </div>
         )}
+
+        {toggled && (
+          <div className="fixed  bg-white bottom-0 left-0 w-full h-screen flex gap-12 justify-center items-center">
+            <div className="flex flex-col gap-8">
+              <a className="text-black" href="/">
+                About me
+              </a>
+              <a className="text-black" href="/skills">
+                Skills
+              </a>
+              <a className="text-black" href="/projects">
+                Projects
+              </a>
+              <a className="text-black" href="/education">
+                Education
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
     </main>
   );
