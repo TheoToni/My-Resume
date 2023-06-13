@@ -13,6 +13,21 @@ function Nav() {
           <h2 className="text-white text-lg font-bold">Antoni Theodorou</h2>
         </div>
 
+        {/* HIDE THE NAV LINKS ON MOBILE WITH HOOK  */}
+        {matches && (
+          <div className="flex gap-12">
+            <a className="text-black" href="/">
+              About me
+            </a>
+            <a className="text-black" href="/skills">
+              Skills
+            </a>
+            <a className="text-black" href="/education">
+              Education
+            </a>
+          </div>
+        )}
+        {/* ONLY SHOW THE HAMBURGER MENU ON MOBILE  */}
         {!matches && (
           <div
             onClick={() => setToggled((prevToggle) => !prevToggle)}
