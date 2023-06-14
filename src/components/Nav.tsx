@@ -10,7 +10,7 @@ function Nav() {
       <nav className=" flex items-center justify-between bg-[#0b1120] h-24 pl-5 pr-5 mb-14">
         <div>
           <h1 className="text-white text-sm font-bold">Resume</h1>
-          <h2 className="text-white text-lg font-bold">Antoni Theodorou</h2>
+          <h2 className="text-white text-lg font-bold ">Antoni Theodorou</h2>
         </div>
 
         <a href="https://github.com/TheoToni" target="blank">
