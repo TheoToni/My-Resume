@@ -7,22 +7,26 @@ function Nav() {
   const matches = useMediaQuery("(min-width: 1280px)");
   return (
     <main>
-      <nav className=" flex items-center justify-between bg-slate-950 h-24 pl-5 pr-5 mb-14">
+      <nav className=" flex items-center justify-between bg-[#0b1120] h-24 pl-5 pr-5 mb-14">
         <div>
           <h1 className="text-white text-sm font-bold">Resume</h1>
           <h2 className="text-white text-lg font-bold">Antoni Theodorou</h2>
         </div>
 
+        <a href="https://github.com/TheoToni" target="blank">
+          <img height={44} width={44} src="./github.png" alt="Image" />
+        </a>
+
         {/* HIDE THE NAV LINKS ON MOBILE WITH HOOK DESKTOP VIEW HERE  */}
         {matches && (
           <div className="flex gap-12">
-            <a className="text-black" href="/">
+            <a className="text-white" href="/">
               About me
             </a>
-            <a className="text-black" href="/skills">
+            <a className="text-white" href="/skills">
               Skills
             </a>
-            <a className="text-black" href="/education">
+            <a className="text-white" href="/education">
               Education
             </a>
           </div>
