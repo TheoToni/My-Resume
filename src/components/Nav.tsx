@@ -54,16 +54,16 @@ function Nav() {
             className="fixed  bg-white bottom-0 left-0 w-full h-[85vh] flex gap-12 justify-center items-center"
           >
             <div className="flex flex-col gap-8">
-              <a className="text-black text-lg" href="/">
+              <a className="text-black text-lg font-bold" href="/">
                 About me
               </a>
-              <a className="text-black text-lg" href="/skills">
+              <a className="text-black text-lg font-bold" href="/skills">
                 Skills
               </a>
-              <a className="text-black text-lg" href="/projects">
+              <a className="text-black text-lg font-bold" href="/projects">
                 Projects
               </a>
-              <a className="text-black text-lg" href="/education">
+              <a className="text-black text-lg font-bold" href="/education">
                 Education
               </a>
             </div>

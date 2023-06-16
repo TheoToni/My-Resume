@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/main-layout.astro";
+import { motion } from "framer-motion";
 ---
 
 <MainLayout />
@@ -11,9 +12,10 @@ import MainLayout from "../layouts/main-layout.astro";
   <p class="font-bold text-lg mb-10">
     Im a passionate web developer and tech enthusiast.
   </p>
-  <div class="flex space-x-5">
-    <img src="./zwei.png" alt="peace" width="65" height="69" />
-    <img src="./zwei.png" alt="peace" width="65" height="69" />
-    <img src="./zwei.png" alt="peace" width="65" height="69" />
+
+  <div class="flex space-x-5 z-0">
+    <img class="finger1" src="./zwei.png" alt="peace" width="65" height="69" />
+    <img class="finger2" src="./zwei.png" alt="peace" width="65" height="69" />
+    <img class="finger3" src="./zwei.png" alt="peace" width="65" height="69" />
   </div>
 </main>
