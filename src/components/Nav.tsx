@@ -38,29 +38,36 @@ function Nav() {
             onClick={() => setToggled((prevToggle) => !prevToggle)}
             className="space-y-1 cursor-pointer z-50"
           >
-            <span className="block h-1 w-8 bg-white"></span>
-            <span className="block h-1 w-8 bg-white"></span>
-            <span className="block h-1 w-8 bg-white"></span>
+            <motion.span
+              animate={{ y: toggled ? -10 : 0, width: toggled ? 0 : 32 }}
+              className="block h-1 w-8 bg-white"
+            ></motion.span>
+            <motion.span className="block h-1 w-8 bg-white"></motion.span>
+            <motion.span className="block h-1 w-8 bg-white"></motion.span>
           </div>
         )}
         {/* MOBILE VIEW HERE*/}
         {toggled && !matches && (
-          <div className="fixed  bg-white bottom-0 left-0 w-full h-4/5 flex gap-12 justify-center items-center">
+          <motion.div
+            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            className="fixed  bg-white bottom-0 left-0 w-full h-[85vh] flex gap-12 justify-center items-center"
+          >
             <div className="flex flex-col gap-8">
-              <a className="text-black" href="/">
+              <a className="text-black text-lg" href="/">
                 About me
               </a>
-              <a className="text-black" href="/skills">
+              <a className="text-black text-lg" href="/skills">
                 Skills
               </a>
-              <a className="text-black" href="/projects">
+              <a className="text-black text-lg" href="/projects">
                 Projects
               </a>
-              <a className="text-black" href="/education">
+              <a className="text-black text-lg" href="/education">
                 Education
               </a>
             </div>
-          </div>
+          </motion.div>
         )}
       </nav>
     </main>
