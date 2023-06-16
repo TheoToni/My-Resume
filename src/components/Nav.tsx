@@ -5,9 +5,10 @@ import { useMediaQuery } from "../util/useMediaQuery";
 function Nav() {
   const [toggled, setToggled] = useState(false);
   const matches = useMediaQuery("(min-width: 1280px)");
+
   return (
     <main>
-      <nav className=" flex items-center justify-between bg-[#0b1120] h-24 pl-5 pr-5 mb-14">
+      <nav className="flex items-center justify-between bg-[#0b1120] h-24 pl-5 pr-5 mb-14">
         <div>
           <h1 className="text-white text-sm font-bold">Resume</h1>
           <h2 className="text-white text-lg font-bold ">Antoni Theodorou</h2>
@@ -35,7 +36,7 @@ function Nav() {
         {!matches && (
           <div
             onClick={() => setToggled((prevToggle) => !prevToggle)}
-            className="space-y-1 cursor-pointer"
+            className="space-y-1 cursor-pointer z-50"
           >
             <span className="block h-1 w-8 bg-white"></span>
             <span className="block h-1 w-8 bg-white"></span>
@@ -43,8 +44,8 @@ function Nav() {
           </div>
         )}
         {/* MOBILE VIEW HERE*/}
-        {toggled && (
-          <div className="fixed  bg-white bottom-0 left-0 w-full h-screen flex gap-12 justify-center items-center">
+        {toggled && !matches && (
+          <div className="fixed  bg-white bottom-0 left-0 w-full h-4/5 flex gap-12 justify-center items-center">
             <div className="flex flex-col gap-8">
               <a className="text-black" href="/">
                 About me
