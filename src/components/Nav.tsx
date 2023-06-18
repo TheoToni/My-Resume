@@ -8,10 +8,10 @@ function Nav() {
 
   return (
     <main>
-      <nav className="flex items-center justify-between bg-[#0b1120] h-24 pl-5 pr-5 mb-14">
+      <nav className="flex items-center justify-between bg-[#0b1120] h-24 pl-5 pr-5 mb-14 xl:pl-10 xl:pr-10">
         <div>
-          <h1 className="text-white text-sm font-bold">Resume</h1>
-          <h2 className="text-white text-lg font-bold ">Antoni Theodorou</h2>
+          <h1 className="text-white text-sm ">Resume</h1>
+          <h2 className="text-white text-lg  ">Antoni Theodorou</h2>
         </div>
 
         <a href="https://github.com/TheoToni" target="blank">
