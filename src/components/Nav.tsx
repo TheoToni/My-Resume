@@ -8,7 +8,7 @@ function Nav() {
 
   return (
     <main>
-      <nav className="flex items-center justify-between bg-[#0b1120] h-24 pl-5 pr-5 mb-14 xl:pl-10 xl:pr-10">
+      <nav className="flex items-center justify-between bg-[#0b1120] h-20 pl-5 pr-5 mb-14 xl:pl-10 xl:pr-10">
         <div>
           <h1 className="text-white text-sm ">Resume</h1>
           <h2 className="text-white text-lg  ">Antoni Theodorou</h2>
