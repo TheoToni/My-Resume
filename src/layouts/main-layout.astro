@@ -3,19 +3,12 @@ import Nav from "../components/Nav";
 import "../styles/main.css";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Hi. My name is Theo" />
-  </head>
+<body class="font-poppins m-0">
+  <main>
+    <Nav client:load />
 
-  <body class="font-poppins">
-    <main>
-      <Nav client:load />
+    <slot />
 
-      <slot />
-      <!--All the different pages to be rendered here -->
-    </main>
-  </body>
-</html>
+    <!--All the different pages to be rendered here -->
+  </main>
+</body>

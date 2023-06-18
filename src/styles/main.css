@@ -71,3 +71,7 @@
     transform: rotate(-45deg);
   }
 }
+
+body {
+  margin: 0;
+}

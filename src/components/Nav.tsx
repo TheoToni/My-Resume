@@ -21,13 +21,13 @@ function Nav() {
         {/* HIDE THE NAV LINKS ON MOBILE WITH HOOK DESKTOP VIEW HERE  */}
         {matches && (
           <div className="flex gap-12">
-            <a className="text-white" href="/">
+            <a className="text-white text-lg" href="/">
               About me
             </a>
-            <a className="text-white" href="/skills">
+            <a className="text-white text-lg" href="/skills">
               Skills
             </a>
-            <a className="text-white" href="/education">
+            <a className="text-white text-lg" href="/education">
               Education
             </a>
           </div>
