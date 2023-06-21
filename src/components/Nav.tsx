@@ -22,13 +22,13 @@ function Nav() {
         {matches && (
           <div className="flex gap-12">
             <a className="text-white text-lg" href="/">
+              Hello
+            </a>
+            <a className="text-white text-lg" href="/about">
               About me
             </a>
-            <a className="text-white text-lg" href="/skills">
-              Skills
-            </a>
-            <a className="text-white text-lg" href="/education">
-              Education
+            <a className="text-white text-lg" href="/projects">
+              Projects
             </a>
           </div>
         )}
@@ -36,7 +36,7 @@ function Nav() {
         {!matches && (
           <div
             onClick={() => setToggled((prevToggle) => !prevToggle)}
-            className="space-y-1 cursor-pointer z-50"
+            className="space-y-1 cursor-pointer"
           >
             <motion.span
               animate={{ y: toggled ? -10 : 0, width: toggled ? 0 : 32 }}
@@ -48,26 +48,34 @@ function Nav() {
         )}
         {/* MOBILE VIEW HERE*/}
         {toggled && !matches && (
-          <motion.div
-            animate={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -50 }}
-            className="fixed  bg-white bottom-0 left-0 w-full h-[85vh] flex gap-12 justify-center items-center"
-          >
-            <div className="flex flex-col gap-8">
-              <a className="text-black text-lg font-bold" href="/">
+          <div className="fixed  bg-white bottom-0 left-0 w-full h-screen flex gap-12 justify-center  ">
+            <div className="flex gap-8 items-stretch mt-44">
+              <motion.a
+                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -50 }}
+                className="text-black text-lg font-bold"
+                href="/"
+              >
+                Hello
+              </motion.a>
+              <motion.a
+                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -50 }}
+                className="text-black text-lg font-bold"
+                href="/about"
+              >
                 About me
-              </a>
-              <a className="text-black text-lg font-bold" href="/skills">
-                Skills
-              </a>
-              <a className="text-black text-lg font-bold" href="/projects">
+              </motion.a>
+              <motion.a
+                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -50 }}
+                className="text-black text-lg font-bold"
+                href="/projects"
+              >
                 Projects
-              </a>
-              <a className="text-black text-lg font-bold" href="/education">
-                Education
-              </a>
+              </motion.a>
             </div>
-          </motion.div>
+          </div>
         )}
       </nav>
     </main>
